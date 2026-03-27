@@ -4,6 +4,345 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex">
+<title>Cometa â Sales Overview Marzo 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:#f8fafc;color:#1e293b;padding:20px 16px;min-height:100vh}
+  .mx{max-width:1100px;margin:0 auto}
+  h1{font-size:22px;font-weight:800;color:#0f172a;margin-bottom:2px}
+  h2{font-size:11px;font-weight:700;color:#94a3b8;margin-bottom:10px;text-transform:uppercase;letter-spacing:.8px}
+  .sub{font-size:11px;color:#94a3b8;margin-bottom:20px}
+  .g2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
+  .g4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px}
+  .card{background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:14px;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+  .kl{font-size:9px;color:#94a3b8;text-transform:uppercase;letter-spacing:.6px;font-weight:600}
+  .kv{font-size:24px;font-weight:800;margin-top:3px;color:#0f172a}
+  .ks{font-size:10px;color:#94a3b8;margin-top:2px}
+  canvas{max-height:220px}
+  table{width:100%;border-collapse:collapse;font-size:11px}
+  th{text-align:left;padding:6px 8px;color:#94a3b8;font-weight:600;font-size:9px;text-transform:uppercase;letter-spacing:.5px;border-bottom:2px solid #e2e8f0}
+  td{padding:6px 8px;border-bottom:1px solid #f1f5f9;color:#334155}
+  .tr{text-align:right}
+  .badge{font-size:8px;font-weight:700;padding:2px 7px;border-radius:10px;color:#fff;display:inline-block}
+  .b-c{background:#6366f1}.b-n{background:#f59e0b}.b-o{background:#10b981}.b-s{background:#ef4444}
+  .section{margin-bottom:20px}
+  .sep{border:none;border-top:1px solid #e2e8f0;margin:20px 0}
+  .footer{text-align:center;padding:16px;font-size:9px;color:#cbd5e1}
+  .prog{height:5px;background:#e2e8f0;border-radius:3px;overflow:hidden;margin-top:5px}
+  .prog-f{height:100%;border-radius:3px}
+  .green{color:#16a34a}.yellow{color:#d97706}.red{color:#dc2626}.muted{color:#94a3b8}
+  .hero{text-align:center;padding:16px}
+  .hero .pct{font-size:28px;font-weight:800}
+  .hero-red{background:linear-gradient(135deg,#fef2f2,#fff7ed);border-color:#fed7aa}
+  .hero-yellow{background:linear-gradient(135deg,#fffbeb,#fef3c7);border-color:#fde68a}
+  .hero-green{background:linear-gradient(135deg,#f0fdf4,#ecfdf5);border-color:#bbf7d0}
+  .spacer td{padding:0;border:none;height:4px}
+  @media(max-width:700px){.g2,.g4{grid-template-columns:1fr 1fr}h1{font-size:18px}.kv{font-size:20px}}
+  @media(max-width:480px){.g2,.g4{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="mx">
+
+  <h1>Sales Overview â Marzo 2026</h1>
+  <p class="sub">HubSpot CRM Â· 27 marzo 2026 Â· <span class="badge b-c">Centro</span> <span class="badge b-n">Norte</span> <span class="badge b-o">Occidente</span> <span class="badge b-s">Sur</span></p>
+
+  <!-- TOP KPIs -->
+  <div class="g4">
+    <div class="card"><div class="kl">Contrato firmado</div><div class="kv" style="color:#16a34a">$3.06M</div><div class="ks">18 deals cerrados</div></div>
+    <div class="card"><div class="kl">SQLs generados</div><div class="kv" style="color:#6366f1">196</div><div class="ks">Fecha reuniÃ³n demo</div></div>
+    <div class="card"><div class="kl">Deals perdidos</div><div class="kv" style="color:#dc2626">72</div><div class="ks">Closed lost</div></div>
+    <div class="card"><div class="kl">Pipeline abierto</div><div class="kv" style="color:#2563eb">$15.21M</div><div class="ks">554 deals activos</div></div>
+  </div>
+
+  <!-- TABLA COMPARATIVA -->
+  <div class="card section">
+    <h2>Tabla Comparativa â Marzo 2026</h2>
+    <div style="overflow-x:auto">
+    <table>
+      <thead>
+        <tr>
+          <th>MÃ©trica</th>
+          <th class="tr"><span class="badge b-c">Centro</span></th>
+          <th class="tr"><span class="badge b-n">Norte</span></th>
+          <th class="tr"><span class="badge b-o">Occidente</span></th>
+          <th class="tr"><span class="badge b-s">Sur</span></th>
+          <th class="tr" style="font-size:8px;color:#ec4899;font-weight:700">Irantzu</th>
+          <th class="tr" style="color:#0f172a;font-weight:800">Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="font-weight:600">Contrato firmado</td>
+          <td class="tr" style="font-weight:700;color:#16a34a">$258K</td>
+          <td class="tr" style="font-weight:700;color:#16a34a">$789K</td>
+          <td class="tr" style="font-weight:700;color:#16a34a">$570K</td>
+          <td class="tr" style="font-weight:700;color:#16a34a">$177K</td>
+          <td class="tr" style="font-weight:700;color:#16a34a">$1.27M</td>
+          <td class="tr" style="font-weight:800;color:#16a34a">$3.06M</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">Meta CF</td>
+          <td class="tr">$2.15M</td>
+          <td class="tr">$1.93M</td>
+          <td class="tr">$1.93M</td>
+          <td class="tr">$400K</td>
+          <td class="tr muted">â</td>
+          <td class="tr" style="font-weight:700">$6.41M</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">% Avance CF</td>
+          <td class="tr red" style="font-weight:700">12.0%</td>
+          <td class="tr yellow" style="font-weight:700">40.9%</td>
+          <td class="tr red" style="font-weight:700">29.5%</td>
+          <td class="tr yellow" style="font-weight:700">44.2%</td>
+          <td class="tr muted">â</td>
+          <td class="tr yellow" style="font-weight:800">47.8%</td>
+        </tr>
+        <tr class="spacer"><td colspan="7"></td></tr>
+        <tr>
+          <td style="font-weight:600">SQLs</td>
+          <td class="tr" style="font-weight:700;color:#6366f1">49</td>
+          <td class="tr" style="font-weight:700;color:#6366f1">27</td>
+          <td class="tr" style="font-weight:700;color:#6366f1">41</td>
+          <td class="tr muted" colspan="2" style="text-align:center;font-weight:700;color:#6366f1">56</td>
+          <td class="tr" style="font-weight:800;color:#6366f1">196</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">Meta SQL</td>
+          <td class="tr">60</td>
+          <td class="tr">60</td>
+          <td class="tr">38</td>
+          <td class="tr muted" colspan="2" style="text-align:center">16</td>
+          <td class="tr" style="font-weight:700">174</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">% Avance SQL</td>
+          <td class="tr green" style="font-weight:700">81.7%</td>
+          <td class="tr yellow" style="font-weight:700">45.0%</td>
+          <td class="tr green" style="font-weight:700">107.9%</td>
+          <td class="tr muted" colspan="2" style="text-align:center">â</td>
+          <td class="tr green" style="font-weight:800">112.6%</td>
+        </tr>
+        <tr class="spacer"><td colspan="7"></td></tr>
+        <tr>
+          <td style="font-weight:600">Deals perdidos</td>
+          <td class="tr" style="color:#dc2626">34</td>
+          <td class="tr" style="color:#dc2626">16</td>
+          <td class="tr" style="color:#dc2626">10</td>
+          <td class="tr muted" colspan="2" style="text-align:center;color:#dc2626">12</td>
+          <td class="tr" style="font-weight:700;color:#dc2626">72</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">RazÃ³n #1 pÃ©rdida</td>
+          <td class="tr">Ghosting (16)</td>
+          <td class="tr">Competencia (5)</td>
+          <td class="tr">Sin ppto (2)</td>
+          <td class="tr muted" colspan="2" style="text-align:center">Ghosting (6)</td>
+          <td class="tr">Ghosting (32)</td>
+        </tr>
+        <tr class="spacer"><td colspan="7"></td></tr>
+        <tr>
+          <td style="font-weight:600">Pipeline abierto</td>
+          <td class="tr" style="font-weight:700;color:#2563eb">$3.82M</td>
+          <td class="tr" style="font-weight:700;color:#2563eb">$2.26M</td>
+          <td class="tr" style="font-weight:700;color:#2563eb">$2.23M</td>
+          <td class="tr muted" colspan="2" style="text-align:center;font-weight:700;color:#2563eb">$6.89M</td>
+          <td class="tr" style="font-weight:800;color:#2563eb">$15.21M</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">Deals en pipeline</td>
+          <td class="tr">67</td>
+          <td class="tr">22</td>
+          <td class="tr">36</td>
+          <td class="tr muted" colspan="2" style="text-align:center">52</td>
+          <td class="tr" style="font-weight:700">554</td>
+        </tr>
+        <tr>
+          <td style="color:#94a3b8">Origen #1 SQLs</td>
+          <td class="tr">Outbound SDR</td>
+          <td class="tr">Evento cometa</td>
+          <td class="tr">Outbound SDR</td>
+          <td class="tr muted" colspan="2" style="text-align:center">Evento cometa</td>
+          <td class="tr">Outbound SDR</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+
+  <hr class="sep">
+
+  <!-- AVANCE EN META -->
+  <h2>Avance en Meta â Marzo 2026</h2>
+
+  <div class="g2" style="margin-bottom:16px">
+    <div class="card hero hero-yellow">
+      <div class="kl">Meta Contrato Firmado</div>
+      <div class="pct yellow" style="margin-top:6px">47.8%</div>
+      <div style="font-size:13px;color:#334155;margin-top:3px"><strong>$3.06M</strong> <span style="color:#94a3b8">de $6.41M</span></div>
+      <div class="prog" style="height:7px;margin-top:8px;max-width:260px;margin-left:auto;margin-right:auto">
+        <div class="prog-f" style="width:47.8%;background:#d97706"></div>
+      </div>
+      <div class="ks" style="margin-top:6px">Faltan $3.35M Â· 4 dÃ­as restantes</div>
+    </div>
+    <div class="card hero hero-green">
+      <div class="kl">Meta SQLs</div>
+      <div class="pct green" style="margin-top:6px">112.6%</div>
+      <div style="font-size:13px;color:#334155;margin-top:3px"><strong>196</strong> <span style="color:#94a3b8">de 174</span></div>
+      <div class="prog" style="height:7px;margin-top:8px;max-width:260px;margin-left:auto;margin-right:auto">
+        <div class="prog-f" style="width:100%;background:#16a34a"></div>
+      </div>
+      <div class="ks" style="margin-top:6px;color:#16a34a;font-weight:600">Meta superada Â· +22 SQLs sobre meta</div>
+    </div>
+  </div>
+
+  <!-- Meta por Squad -->
+  <div class="g4">
+    <div class="card" style="border-left:3px solid #6366f1">
+      <div class="kl"><span class="badge b-c">Centro</span> Â· CF</div>
+      <div style="display:flex;align-items:baseline;gap:5px;margin-top:6px">
+        <span style="font-size:16px;font-weight:800;color:#dc2626">$258K</span>
+        <span style="font-size:10px;color:#94a3b8">/ $2.15M</span>
+      </div>
+      <div class="prog" style="margin-top:5px"><div class="prog-f" style="width:12%;background:#dc2626"></div></div>
+      <div style="font-size:10px;font-weight:700;color:#dc2626;margin-top:2px">12.0%</div>
+      <div style="margin-top:6px;border-top:1px solid #f1f5f9;padding-top:5px">
+        <div class="kl">SQLs</div>
+        <div style="display:flex;align-items:baseline;gap:4px;margin-top:2px">
+          <span style="font-size:13px;font-weight:800;color:#16a34a">49</span>
+          <span style="font-size:9px;color:#94a3b8">/ 60 Â· 81.7%</span>
+        </div>
+        <div class="prog" style="margin-top:2px"><div class="prog-f" style="width:81.7%;background:#16a34a"></div></div>
+      </div>
+    </div>
+
+    <div class="card" style="border-left:3px solid #f59e0b">
+      <div class="kl"><span class="badge b-n">Norte</span> Â· CF</div>
+      <div style="display:flex;align-items:baseline;gap:5px;margin-top:6px">
+        <span style="font-size:16px;font-weight:800;color:#d97706">$789K</span>
+        <span style="font-size:10px;color:#94a3b8">/ $1.93M</span>
+      </div>
+      <div class="prog" style="margin-top:5px"><div class="prog-f" style="width:40.9%;background:#d97706"></div></div>
+      <div style="font-size:10px;font-weight:700;color:#d97706;margin-top:2px">40.9%</div>
+      <div style="margin-top:6px;border-top:1px solid #f1f5f9;padding-top:5px">
+        <div class="kl">SQLs</div>
+        <div style="display:flex;align-items:baseline;gap:4px;margin-top:2px">
+          <span style="font-size:13px;font-weight:800;color:#d97706">27</span>
+          <span style="font-size:9px;color:#94a3b8">/ 60 Â· 45.0%</span>
+        </div>
+        <div class="prog" style="margin-top:2px"><div class="prog-f" style="width:45%;background:#d97706"></div></div>
+      </div>
+    </div>
+
+    <div class="card" style="border-left:3px solid #10b981">
+      <div class="kl"><span class="badge b-o">Occidente</span> Â· CF</div>
+      <div style="display:flex;align-items:baseline;gap:5px;margin-top:6px">
+        <span style="font-size:16px;font-weight:800;color:#dc2626">$570K</span>
+        <span style="font-size:10px;color:#94a3b8">/ $1.93M</span>
+      </div>
+      <div class="prog" style="margin-top:5px"><div class="prog-f" style="width:29.5%;background:#dc2626"></div></div>
+      <div style="font-size:10px;font-weight:700;color:#dc2626;margin-top:2px">29.5%</div>
+      <div style="margin-top:6px;border-top:1px solid #f1f5f9;padding-top:5px">
+        <div class="kl">SQLs</div>
+        <div style="display:flex;align-items:baseline;gap:4px;margin-top:2px">
+          <span style="font-size:13px;font-weight:800;color:#16a34a">41</span>
+          <span style="font-size:9px;color:#94a3b8">/ 38 Â· 107.9%</span>
+        </div>
+        <div class="prog" style="margin-top:2px"><div class="prog-f" style="width:100%;background:#16a34a"></div></div>
+      </div>
+    </div>
+
+    <div class="card" style="border-left:3px solid #ef4444">
+      <div class="kl"><span class="badge b-s">Sur</span> Â· CF</div>
+      <div style="display:flex;align-items:baseline;gap:5px;margin-top:6px">
+        <span style="font-size:16px;font-weight:800;color:#d97706">$177K</span>
+        <span style="font-size:10px;color:#94a3b8">/ $400K</span>
+      </div>
+      <div class="prog" style="margin-top:5px"><div class="prog-f" style="width:44.2%;background:#d97706"></div></div>
+      <div style="font-size:10px;font-weight:700;color:#d97706;margin-top:2px">44.2%</div>
+      <div style="margin-top:6px;border-top:1px solid #f1f5f9;padding-top:5px">
+        <div class="kl">SQLs</div>
+        <div style="display:flex;align-items:baseline;gap:4px;margin-top:2px">
+          <span style="font-size:13px;font-weight:800;color:#d97706">48</span>
+          <span style="font-size:9px;color:#94a3b8">+ 8 Irantzu</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="sep">
+
+  <!-- CHARTS -->
+  <h2>Detalle â Marzo 2026</h2>
+
+  <div class="g2">
+    <div class="card"><h2>Contrato firmado por origen</h2><canvas id="c1"></canvas></div>
+    <div class="card"><h2>SQLs por origen</h2><canvas id="c2"></canvas></div>
+  </div>
+
+  <div class="g2">
+    <div class="card"><h2>Deals perdidos por razÃ³n</h2><canvas id="c3"></canvas></div>
+    <div class="card"><h2>Pipeline por squad</h2><canvas id="c4"></canvas></div>
+  </div>
+
+  <div class="footer">Cometa Â· HubSpot CRM Â· 27 marzo 2026 Â· "Contrato firmado" = Closed Won Â· Datos actualizados en tiempo real</div>
+
+</div>
+
+<script>
+Chart.defaults.color='#94a3b8';
+Chart.defaults.borderColor='#f1f5f9';
+Chart.defaults.font.family='Inter';
+Chart.defaults.font.size=10;
+
+var fmt=function(v){return v>=1e6?'$'+(v/1e6).toFixed(1)+'M':v>=1e3?'$'+(v/1e3).toFixed(0)+'K':'$'+v};
+var tt={callbacks:{label:function(c){return typeof c.raw==='number'&&c.raw>1000?fmt(c.raw):c.raw}}};
+
+new Chart(document.getElementById('c1'),{type:'bar',data:{
+  labels:['Outbound SDR','Referido','Partnership','Evento cometa','Evento externo','Inbound sales','Otro'],
+  datasets:[{data:[1464370,924995,211663,196788,114273,107600,42659],
+    backgroundColor:['#6366f1','#f59e0b','#10b981','#ef4444','#8b5cf6','#ec4899','#cbd5e1'],
+    borderRadius:5,barThickness:16}]
+},options:{indexAxis:'y',plugins:{legend:{display:false},tooltip:tt},
+  scales:{x:{ticks:{callback:function(v){return fmt(v)}},grid:{color:'#f1f5f9'}},y:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('c2'),{type:'bar',data:{
+  labels:['Outbound SDR','Evento cometa','Webinar','Contenido','Inbound sales','Evento externo','Referido','Otro'],
+  datasets:[{data:[57,50,24,21,17,12,6,9],
+    backgroundColor:['#6366f1','#f59e0b','#10b981','#0ea5e9','#8b5cf6','#ef4444','#ec4899','#cbd5e1'],
+    borderRadius:5,barThickness:16}]
+},options:{indexAxis:'y',plugins:{legend:{display:false}},
+  scales:{x:{grid:{color:'#f1f5f9'}},y:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('c3'),{type:'bar',data:{
+  labels:['Ghosting','Siguiente ciclo','Competencia','Sin contacto DM','Sin reuniÃ³n','No cambiar','Sin presupuesto','Otro'],
+  datasets:[{data:[32,9,8,5,4,4,3,7],
+    backgroundColor:['#ef4444','#f97316','#f59e0b','#eab308','#94a3b8','#94a3b8','#94a3b8','#cbd5e1'],
+    borderRadius:5,barThickness:16}]
+},options:{indexAxis:'y',plugins:{legend:{display:false}},
+  scales:{x:{grid:{color:'#f1f5f9'}},y:{grid:{display:false}}}}});
+
+new Chart(document.getElementById('c4'),{type:'bar',data:{
+  labels:['Centro','Norte','Occidente','Sur + Irantzu'],
+  datasets:[{data:[3823038,2259733,2230435,6893180],
+    backgroundColor:['#6366f1','#f59e0b','#10b981','#a78bfa'],
+    borderRadius:5,barThickness:32}]
+},options:{plugins:{legend:{display:false},tooltip:tt},
+  scales:{y:{ticks:{callback:function(v){return fmt(v)}},grid:{color:'#f1f5f9'}},x:{grid:{display:false}}}}});
+</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
 <title>Cometa — Sales Overview Marzo 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
